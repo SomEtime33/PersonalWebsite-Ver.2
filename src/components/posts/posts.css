@@ -1,0 +1,8 @@
+.posts{
+   flex: 9; 
+   display: flex;
+
+   /* 위의 display:flex 에 의해 vertical 정렬 -> felx-wrap = 정렬할 child가 많아서 화면 넘어가는 경우 아랫줄로 이동 */
+   flex-wrap: wrap;
+   margin: 20px;
+}

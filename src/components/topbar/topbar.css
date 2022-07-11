@@ -1,0 +1,66 @@
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items:  center;
+    font-family: 'Josefin Sans', sans-serif; 
+    z-index: 999;
+
+}
+.topLeft, .topRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+
+    /* 아이콘에서의 포인터 모양 변경 */
+    justify-content: center; 
+    
+}
+
+.topCenter {
+    flex: 6;
+}
+
+.topIcon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+}
+
+.topImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* HOME / ABOUT / CONTACT 등이 속해있는 전체 리스트 관리 */
+.topList{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 리스트 내부의 HOME / ABOUT 등 각각의 요소 관리 */
+.topListItem{
+    margin-right: 20px;
+    font-size: 18px;
+
+    /* 글씨 두께 */
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.topSearchIcon{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+
+}

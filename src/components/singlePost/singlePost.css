@@ -1,0 +1,73 @@
+.singlePost{
+    flex: 9;
+}
+
+.singlePostWrapper{
+    padding: 20px;
+    padding-right: 0;
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.singlePostTitle{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+
+}
+
+.singlePostEdit{
+    float: right;
+    font-size: 16px;
+}
+
+.singlePostIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* single post -> singlePostIcon (=delete / edit 아이콘) -> 왼쪽부터 순서대로 first child, last child */
+.singlePostIcon:first-child{
+    color: teal;
+
+}
+
+.singlePostIcon:last-child{
+    color: tomato;
+}
+
+.singlePostInfo{
+    margin-bottom: 20px;
+    display: flex;
+
+    /* singlePostInfo = 게시자 이름 / 게시 시간 두 가지로 구성 -> 둘 사이의 space */
+    justify-content: space-between;
+
+    font-size: 16px;
+    color: darkolivegreen;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.singlePostDesc{
+    color: #666;
+    font-size: 18px;
+
+    /* 줄 간 간격 */
+    line-height: 25px;
+
+}
+
+/* Descripton 의 첫 글자에 효과 부여 */
+.singlePostDesc::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
